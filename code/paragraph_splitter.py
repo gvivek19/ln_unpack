@@ -1,8 +1,10 @@
 class Splitter:
-	def __init__(self, filename):
-		pass
+	def __init__(self, file_parser, model):
+		self.file = file_parser
+		self.model = model
 
-	def 
+	def split(self):
+		pass
 
 class DocumentSplitter:
 	def __init__(self):

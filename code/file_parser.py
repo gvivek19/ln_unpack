@@ -27,4 +27,9 @@ class FileParser:
 	
 	def getSentences(self) :
 		return self.lines[:-9]
-
+	
+	def getName(self):
+		return self.bs.findAll('name')[0].contents[0]
+		
+	def getURL(self):
+		return self.bs.findAll('austlii')[0].contents[0]

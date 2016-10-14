@@ -23,7 +23,7 @@ class FileParser:
 	def parseCatchPhrases(self):
 		raw_cp = self.bs.findAll("catchphrase")
 		for cp in raw_cp:
-			self.cp.append(cp.contents)
+			self.cp.append(cp.contents[0])
 		
 	def getCatchPhrases(self):
 		return self.cp

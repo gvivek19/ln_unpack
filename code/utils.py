@@ -48,5 +48,5 @@ def convert2TFFormat(dataset) :
 		for sentence in sentences :
 			article = article + "<s>" + sentence + "</s> "
 
-		article = article + "</p> </d> abstract=<d> <p> <s> " + catch_phrase[0] + " </s> </p> </d>"
+		article = article + "</p> </d>\tabstract=<d> <p> <s> " + catch_phrase[0] + " </s> </p> </d>"
 	return article

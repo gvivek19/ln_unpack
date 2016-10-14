@@ -26,3 +26,11 @@ for eachfile in filelist[:1383]:
 vocab = model.get_vocab()
 for key,val in vocab.items() :
 	vocabfile.write(key.encode("utf8") + " " + str(val))
+vocabfile.write("<p> 1")
+vocabfile.write("</p> 1")
+vocabfile.write("<s> 1")
+vocabfile.write("</s> 1")
+vocabfile.write("<d> 1")
+vocabfile.write("</d> 1")
+vocabfile.write("<UNK> 1")
+vocabfile.write("<PAD> 1")
